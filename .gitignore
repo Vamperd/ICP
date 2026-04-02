@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+results/*
+!results/.gitkeep
+
+tests/*
+
+ICP_data/*
+
+SYK_ICP/*
