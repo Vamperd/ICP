@@ -20,7 +20,9 @@ for i = 1:9
     fprintf('mynicp mapping: pair %d -> %d\n', i - 1, i);
     curr_ply = pcread(fullfile(data_dir, sprintf('%d.ply', i)));
 
-    [tform_init, curr_ply, debug_info] = mynicp(curr_ply, laser_map, tform_init, 50, 0.005, 0.5, 0.5);
+    % 这一组参数是对当前数据做小范围扫描后挑出来的稳定配置：
+    % dist=1.0, cos=0.08, tangent=1.2, candidate_k=6
+    [tform_init, curr_ply, debug_info] = mynicp(curr_ply, laser_map, tform_init, 50, 0.01, 1.0, 0.08, 1.2, 6);
     robot_tf{i + 1} = tform_init;
     MSE{i} = debug_info.mse_history;
     metrics(i, :) = [debug_info.iteration_count, debug_info.valid_correspondence_count, debug_info.mean_residual];

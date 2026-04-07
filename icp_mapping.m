@@ -26,3 +26,10 @@ end
 
 figure;
 pcshow(laser_map, 'MarkerSize', 20);
+title('ICP Baseline Map');
+
+% 将结果图保存至 results_matlab 文件夹
+saveas(gcf, 'results_matlab/icp_baseline_map.png');
+
+% 暂停脚本运行，直到用户按下任意键（或者使用 pause(5) 停留5秒）
+pause(5);
