@@ -22,29 +22,29 @@
 
 根目录主要文件如下：
 
-- [ICP_data](c:/Users/86136/Desktop/大三春夏/大三春 智能移动技术/IPC/ICP_data)
+- [ICP_data]
   - 实验输入数据，包含 `0.ply ~ 9.ply`
-- [icp_demo.m](c:/Users/86136/Desktop/大三春夏/大三春 智能移动技术/IPC/icp_demo.m)
+- [icp_demo.m]
   - MATLAB 内置 ICP 的双帧示例
-- [icp_mapping.m](c:/Users/86136/Desktop/大三春夏/大三春 智能移动技术/IPC/icp_mapping.m)
+- [icp_mapping.m]
   - MATLAB 内置 ICP 的顺序建图基准
-- [myicp.m](c:/Users/86136/Desktop/大三春夏/大三春 智能移动技术/IPC/myicp.m)
+- [myicp.m]
   - 自实现原始点到点 ICP
-- [myplicp.m](c:/Users/86136/Desktop/大三春夏/大三春 智能移动技术/IPC/myplicp.m)
+- [myplicp.m]
   - 自实现点到线 ICP
-- [mynicp.m](c:/Users/86136/Desktop/大三春夏/大三春 智能移动技术/IPC/mynicp.m)
+- [mynicp.m]
   - 自实现法向增强点到线 ICP
-- [myicp_mapping.m](c:/Users/86136/Desktop/大三春夏/大三春 智能移动技术/IPC/myicp_mapping.m)
+- [myicp_mapping.m]
   - 原始 ICP 主程序
-- [myplicp_mapping.m](c:/Users/86136/Desktop/大三春夏/大三春 智能移动技术/IPC/myplicp_mapping.m)
+- [myplicp_mapping.m]
   - PL-ICP 主程序
-- [mynicp_mapping.m](c:/Users/86136/Desktop/大三春夏/大三春 智能移动技术/IPC/mynicp_mapping.m)
+- [mynicp_mapping.m]
   - N-ICP 主程序
-- [explain.md](c:/Users/86136/Desktop/大三春夏/大三春 智能移动技术/IPC/explain.md)
+- [explain.md]
   - 算法详细说明文档
-- [results_matlab](c:/Users/86136/Desktop/大三春夏/大三春 智能移动技术/IPC/results_matlab)
+- [results_matlab]
   - 所有结果图和结果数据的输出目录
-- [SYK_ICP](c:/Users/86136/Desktop/大三春夏/大三春 智能移动技术/IPC/SYK_ICP)
+- [SYK_ICP]
   - 参考实现目录，用于对照思路与效果
 
 ---
@@ -153,7 +153,7 @@ run('icp_mapping.m')
 
 输出：
 
-- [results_matlab/icp_baseline_map.png](c:/Users/86136/Desktop/大三春夏/大三春 智能移动技术/IPC/results_matlab/icp_baseline_map.png)
+- [results_matlab/icp_baseline_map.png]
 
 ### 4.3 运行自实现原始 ICP
 
@@ -193,8 +193,7 @@ matlab -batch "run('mynicp_mapping.m')"
 
 目录：
 
-- [results_matlab/icp](c:/Users/86136/Desktop/大三春夏/大三春 智能移动技术/IPC/results_matlab/icp)
-
+- [results_matlab/icp]
 文件：
 
 - `local_map.png`
@@ -206,8 +205,7 @@ matlab -batch "run('mynicp_mapping.m')"
 
 目录：
 
-- [results_matlab/plicp](c:/Users/86136/Desktop/大三春夏/大三春 智能移动技术/IPC/results_matlab/plicp)
-
+- [results_matlab/plicp]
 文件：
 
 - `local_map.png`
@@ -219,7 +217,7 @@ matlab -batch "run('mynicp_mapping.m')"
 
 目录：
 
-- [results_matlab/nicp](c:/Users/86136/Desktop/大三春夏/大三春 智能移动技术/IPC/results_matlab/nicp)
+- [results_matlab/nicp]
 
 文件：
 
@@ -392,8 +390,8 @@ matlab -batch "run('mynicp_mapping.m')"
 
 其中可以直接引用：
 
-- 算法原理：见 [explain.md](c:/Users/86136/Desktop/大三春夏/大三春 智能移动技术/IPC/explain.md)
-- 结果图片：见 [results_matlab](c:/Users/86136/Desktop/大三春夏/大三春 智能移动技术/IPC/results_matlab)
+- 算法原理：见 [explain.md]
+- 结果图片：见 [results_matlab]
 - 结果数据：见各目录下的 `result_summary.mat`
 
 ---
